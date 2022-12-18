@@ -8,7 +8,7 @@ const BankPage = () => {
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
-        fetch('https://banking-bd5q.onrender.com/')
+        fetch('https://bankserver.onrender.com/')
             .then((res) => {
                 return res.json();
             })

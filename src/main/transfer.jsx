@@ -12,9 +12,9 @@ const TransferPage = () => {
         setPay(0)
         let formdata = new FormData(data)
         
-        await fetch('https://banking-bd5q.onrender.com/transfers',
+        await fetch('https://bankserver.onrender.com/transfers',
       {
-        method: 'POST',
+        method: 'PUT',
         body: formdata
       })
       .then(res => res.json()).then((d) => {
