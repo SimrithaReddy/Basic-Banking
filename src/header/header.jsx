@@ -13,6 +13,9 @@ const GripHeader = () => {
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         <a className="mr-5 hover:text-gray-900 text-xl" href="#home">Home</a>
                         <a className="mr-5 hover:text-gray-900 text-xl" href="#footer">Contact us</a>
+                        <Link to="/details" className="mr-5 hover:text-gray-900 text-xl">
+                            Transcation History
+                        </Link>
                      <Link to="/users" className="mr-5 hover:text-gray-900 text-xl">
                             View Customers
                         </Link>

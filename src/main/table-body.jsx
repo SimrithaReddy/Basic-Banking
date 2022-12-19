@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const TableBody = (props) => {
     const { userData } = props
     return (
@@ -12,7 +10,6 @@ const TableBody = (props) => {
                         <th className="mx-8 pr-10 p-auto pb-5 pt-5">Email</th>
                         <th className="mx-8 pr-10 p-auto pb-5 pt-5">Balance</th>
                         <th className="mx-8 pr-10 p-auto pb-5 pt-5 pl-4">Account Number</th>
-                        <th className="mx-8 pr-10 p-auto pb-5 pt-5">Transfer</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,11 +22,6 @@ const TableBody = (props) => {
                                     <td className="mx-8 pr-10 p-auto pb-5 pt-5">{ele.email}</td>
                                     <td className="mx-8 pr-10 p-auto pb-5 pt-5">{ele.balance}</td>
                                     <td className="mx-8 pr-10 p-auto pb-5 pt-5">{ele.account}</td>
-
-                                    <td className="mx-8 pr-10 p-auto pb-5 pt-5"> <Link to="/transfers">
-                                        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                        Send</button></Link></td>
-
                                 </tr>
                             )
                         })
